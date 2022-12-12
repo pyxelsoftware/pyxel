@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyxel Music</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/3519619ea4.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav class="nav blank"></nav>
+    <p>
+        <button><i class="i fa-solid fa-bars"> menu</i></button>
+    </p>
+<div>
+    <nav>
+        <a href="index.html"><span class="tooltip"><img src="favicon.ico" alt="logo" class="img homeicon"> Home</span></a>
+        <hr>
+        <a href="commands.html"><span class="tooltip"><i class="fa-solid fa-code"></i> Commands</span></a>
+        <a href="daily.html"><span class="tooltip"><i class="fa-solid fa-calendar-plus"></i> Dailys</span>
+        </a>
+        <a href="games.html"><span class="tooltip"><i class="fa-solid fa-gamepad"></i> Games</span></a>
+        <a href="music.html" class="active"><span class="tooltip"><i class="fa-solid fa-headphones"></i> Music</span></a>
+        <a href="books.html"><span class="tooltip"><i class="fa-solid fa-book"></i> Books</span></a>
+        <hr>
+        <a href="signup.html"><span class="tooltip"><i class="fa-solid fa-user-plus"></i> Signup</span></a>
+        <a href="phone.html"><span class="tooltip"><i class="fa-solid fa-phone"></i> My Phone</span></a>
+    </nav>
+</div>
+<nav class="nav blank"></nav>
+    <script>
+            const nav_links = document.querySelectorAll('a');
+            nav_links.forEach(anchor => anchor.addEventListener('click', (event) => {
+                nav_links.forEach(anchor => anchor.className = '');
+                anchor.className = 'active';
+            }));
+            $("p").click(function(e) {
+  var div = $("+ div", this);   
+  div.css("display", div.css("display") === "block" ? "none" : "block");
+  $(this.nodeName + " + div").not(div).css("display", "none");
+})
+    </script>
+
+    <h2>No music have been uploaded yet... Be the first one to!</h2>
+    <br>
+    <h2>Upload your music or someone else's!</h2>
+    <form action="https://formsubmit.co/26346cc26e8b0567c5b9f53972f01366" name="Upload Music" method="post" enctype="multipart/form-data">
+        <div>
+        <input type="file" name="file" id="file" placeholder="Upload File">
+        </div>
+        <br>
+        <div>
+        <input type="text" name="Author" placeholder="Author" required>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="This song is made my me?" placeholder="This song is made my me">
+            <label>This song is made by me</label>
+        </div>
+        <br>
+        <div>
+        <input type="text" name="Login" placeholder="Your Username or Email" required>
+        </div>
+        <br>
+        <div>
+        <input type="password" name="Password" placeholder="Your Password">
+        </div>
+        <br>
+        <input type="submit" value="Upload music">
+    </form>
+</body>
+</html>

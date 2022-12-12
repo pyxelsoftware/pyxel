@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Pyxel</title>
+    <script src="https://kit.fontawesome.com/3519619ea4.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav class="nav blank"></nav>
+    <p>
+        <button><i class="i fa-solid fa-bars"> menu</i></button>
+    </p>
+<div>
+    <nav>
+        <a href="index.html" class="active"><span class="tooltip"><img src="favicon.ico" alt="logo" class="img homeicon"> Home</span></a>
+        <hr>
+        <a href="commands.html"><span class="tooltip"><i class="fa-solid fa-code"></i> Commands</span></a>
+        <a href="daily.html"><span class="tooltip"><i class="fa-solid fa-calendar-plus"></i> Dailys</span>
+        </a>
+        <a href="games.html"><span class="tooltip"><i class="fa-solid fa-gamepad"></i> Games</span></a>
+        <a href="music.html"><span class="tooltip"><i class="fa-solid fa-headphones"></i> Music</span></a>
+        <a href="books.html"><span class="tooltip"><i class="fa-solid fa-book"></i> Books</span></a>
+        <hr>
+        <a href="signup.html"><span class="tooltip"><i class="fa-solid fa-user-plus"></i> Signup</span></a>
+        <a href="phone.html"><span class="tooltip"><i class="fa-solid fa-phone"></i> My Phone</span></a>
+    </nav>
+</div>
+<nav class="nav blank"></nav>
+    <script>
+            const nav_links = document.querySelectorAll('a');
+            nav_links.forEach(anchor => anchor.addEventListener('click', (event) => {
+                nav_links.forEach(anchor => anchor.className = '');
+                anchor.className = 'active';
+            }));
+            $("p").click(function(e) {
+  var div = $("+ div", this);   
+  div.css("display", div.css("display") === "block" ? "none" : "block");
+  $(this.nodeName + " + div").not(div).css("display", "none");
+})
+    </script>
+
+    <h2>Create a account</h2>
+        <h4>Publish posts and acess more funcions by creating a free account with us.</h4>
+        <a href="signup.html"><button>Sign up!</button></a>
+        <br>
+
+    <a href="games.html"><h2>Games</h2></a>
+        <a href="https://poki.com.br/g/subway-surfers#fullscreen"><h4>(Beta) - Poki Subway Surfers (by Poki)</h4></a>
+        <br>
+
+    <h2>Music</h2>
+        <h4>No music have been uploaded yet... <a href="music.html"> Be the first one to!</a></h4>
+        <br>
+
+    <h2>Books</h2>
+        <h4>No books have been uploaded yet... <a href="books.html"> Be the first one to!</a></h4>
+        <br>
+        <p>Not supported browsers: Mobile Safari.</p>
+        <p>This website is on it's public beta version (8). Design might get better and bugs might happen. Report bugs or not supported browsers to the email <a href="mailto:pyxelservices@outlook.com">pyxelservices@outlook.com</a>. Thank you for using Pyxel!</p>
+</body>
+    
+</html>
