@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign up - Pyxel</title>
+    <script src="https://kit.fontawesome.com/3519619ea4.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav class="nav blank"></nav>
+    <p>
+        <button><i class="i fa-solid fa-bars"> menu</i></button>
+    </p>
+<div>
+    <nav>
+        <a href="index.html"><img src="ball.png" alt="logo" class="img homeiconoff"><span class="tooltip">Home</span></a>
+        <hr>
+        <a href="commands.html"> <i class="fa-solid fa-code"></i><span class="tooltip">Commands</span></a>
+        <a href="daily.html"><i class="fa-solid fa-calendar-plus"></i><span class="tooltip"> Dailys</span>
+        </a>
+        <a href="games.html"><i class="fa-solid fa-gamepad"></i><span class="tooltip">Games</span></a>
+        <a href="music.html"><i class="fa-solid fa-headphones"></i><span class="tooltip">Music</span></a>
+        <a href="books.html"><i class="fa-solid fa-book"></i><span class="tooltip">Books</span></a>
+        <hr>
+        <a href="signup.html" class="active"><i class="i ic fa-solid fa-user-plus"></i><span class="tooltip">Signup</span></a>
+        <a href="phone.html"><i class="fa-solid fa-phone"></i><span class="tooltip">My Phone</span></a>
+    </nav>
+</div>
+<nav class="nav blank"></nav>
+    <script>
+            const nav_links = document.querySelectorAll('a');
+            nav_links.forEach(anchor => anchor.addEventListener('click', (event) => {
+                nav_links.forEach(anchor => anchor.className = '');
+                anchor.className = 'active';
+            }));
+            $("p").click(function(e) {
+  var div = $("+ div", this);   
+  div.css("display", div.css("display") === "block" ? "none" : "block");
+  $(this.nodeName + " + div").not(div).css("display", "none");
+})
+    </script>
+
+    <h2>Sign up to Pyxel</h2>
+    <h4>One account, everything we offer. Create your here:</h4>
+    <form action="https://formsubmit.co/26346cc26e8b0567c5b9f53972f01366" method="POST">
+        <div>
+            <input name="Username" type="text" placeholder="Username" required>
+        </div>
+        <div>
+            <input name="Name" type="text" placeholder="Name (optional)">
+        </div>
+        <br>
+        <div>
+            <input name="Email" type="email" placeholder="Email" required>
+        </div>
+        <div>
+            <input name="Password" type="password" placeholder="Password" required>
+        </div>
+        <br>
+        <div>
+            <select name="Sex">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <p>Our social-media is secure to all ages.</p>
+            <button type="submit">Create Account</button>
+        </div>
+    </form>
+</body>
+</html>
