@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa - Jobzee</title>
+    <link rel="stylesheet" href="/jobzee/style.css">
+    <script src="https://kit.fontawesome.com/3519619ea4.js" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="/jobzee/index.html"><img src="/jobzee/logoblack.png" alt="jobzee" class="img homeiconoff"><span class="tooltip"></span></a>
+        <a href="/jobzee/search.html" class="active"><i class=" i ic fa-solid fa-magnifying-glass"></i></span></a>
+        <a href="/jobzee/publish.html"><i class="fa-solid fa-square-plus"></i></span></a>
+        <a href="/jobzee/team.html"><i class="fa-solid fa-users"></i></span></a>
+        <a href="/jobzee/user.html"><i class="fa-solid fa-circle-user"></i></span></a>
+        <a href="/pyxel/index.html"><img src="/pyxel/ball.png" alt="pyxel" class="img homeiconoff"><span class="tooltip"></span></a>
+    </nav>
+    <!-- Code Starts Here-->
+    <p class="centericonblack"><i class="fa-solid fa-magnifying-glass fa-5x"></i></p>
+    <h1 class="title">Pesquisar</h1>
+    <br>
+    
+    <input id="searchbar" onkeyup="search_user()" type="text"
+		name="search" placeholder="Procure nome, cargo ou empresa...">
+    <br>
+    <br>
+
+    <a href="users/admin.html">
+        <card class="searchuser">
+            <div class="flexbox">
+            <i class="usericon fa-solid fa-circle-user fa-5x"></i>
+            <h1 class="white">Admin - @admin</h1>
+            </div>
+            <div class="flexbox">
+            <h2 class="white">Trabalha em: Pyxel</h2>
+            </div>
+        </card>
+    </a>
+    <br>
+
+</body>
+</html>

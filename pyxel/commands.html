@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos Pyxel</title>
+    <link rel="stylesheet" href="/pyxel/styles.css">
+    <script src="https://kit.fontawesome.com/3519619ea4.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="/pyxel/index.html"><img src="/pyxel/ball.png" alt="logo" class="img homeiconoff"><span class="tooltip"></span></a>
+        <a href="/pyxel/commands.html" class="active"> <i class="i ic fa-solid fa-code"></i><span class="tooltip"></span></a>
+        <a href="/pyxel/daily.html"><i class="fa-solid fa-calendar-plus"></i><span class="tooltip"> </span>
+        </a>
+        <a href="/pyxel/games.html"><i class="fa-solid fa-gamepad"></i><span class="tooltip"></span></a>
+        <a href="/pyxel/music.html"><i class="fa-solid fa-headphones"></i><span class="tooltip"></span></a>
+        <a href="/pyxel/books.html"><i class="fa-solid fa-book"></i><span class="tooltip"></span></a>
+        <a href="/pyxel/signup.html"><i class="fa-solid fa-user-plus"></i><span class="tooltip"></span></a>
+        <a href="/pyxel/phone.html"><i class="fa-solid fa-phone"></i><span class="tooltip"></span></a>
+        <a href="/jobzee/index.html"><img src="/jobzee/ball.png" class="img homeiconoff"><span class="tooltip"></span></a>
+    </nav>
+    <script>
+            const nav_links = document.querySelectorAll('a');
+            nav_links.forEach(anchor => anchor.addEventListener('click', (event) => {
+                nav_links.forEach(anchor => anchor.className = '');
+                anchor.className = 'active';
+            }));
+            $("p").click(function(e) {
+  var div = $("+ div", this);   
+  div.css("display", div.css("display") === "block" ? "none" : "block");
+  $(this.nodeName + " + div").not(div).css("display", "none");
+})
+    </script>
+
+<p class="center"><i class="fa-solid fa-code fa-5x"></i></p>
+<h1 class="center">Comandos</h1>
+<br>
+
+            <p align="center"><iframe src="https://jivo.chat/zUBLinO9Ku" width="360" height="600" frameborder="0"></iframe></p>
+            <p>Os comandos não são automáticos. Isso não é um bot.</p>
+            <p>Em homenagem a antiga PyAir.</p>
+</body>
+</html>
