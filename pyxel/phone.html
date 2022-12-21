@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Telefone Pyxel</title>
+    <script src="https://kit.fontawesome.com/3519619ea4.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="/pyxel/index.html"><img src="/pyxel/ball.png" alt="logo" class="img homeiconoff"><span class="tooltip"></span></a>
+        <a href="/pyxel/commands.html"> <i class="fa-solid fa-code"></i><span class="tooltip"></span></a>
+        <a href="/pyxel/daily.html"><i class="fa-solid fa-calendar-plus"></i><span class="tooltip"> </span>
+        </a>
+        <a href="/pyxel/games.html"><i class="fa-solid fa-gamepad"></i><span class="tooltip"></span></a>
+        <a href="/pyxel/music.html"><i class="fa-solid fa-headphones"></i><span class="tooltip"></span></a>
+        <a href="/pyxel/books.html"><i class="fa-solid fa-book"></i><span class="tooltip"></span></a>
+        <a href="/pyxel/signup.html"><i class="fa-solid fa-user-plus"></i><span class="tooltip"></span></a>
+        <a href="/pyxel/phone.html" class="active"><i class="i ic fa-solid fa-phone"></i><span class="tooltip"></span></a>
+        <a href="/jobzee/index.html"><img src="/jobzee/ball.png" class="img homeiconoff"><span class="tooltip"></span></a>
+    </nav>
+    <script>
+            const nav_links = document.querySelectorAll('a');
+            nav_links.forEach(anchor => anchor.addEventListener('click', (event) => {
+                nav_links.forEach(anchor => anchor.className = '');
+                anchor.className = 'active';
+            }));
+            $("p").click(function(e) {
+  var div = $("+ div", this);   
+  div.css("display", div.css("display") === "block" ? "none" : "block");
+  $(this.nodeName + " + div").not(div).css("display", "none");
+})
+    </script>
+
+<p class="center"><i class="fa-solid fa-phone fa-5x"></i></p>
+<h1 class="center">Telefone</h1>
+<br>
+
+<h2>Voicemail</h2>
+<form action="https://formsubmit.co/26346cc26e8b0567c5b9f53972f01366" method="post" enctype="multipart/form-data">
+    <div>
+    <input type="file" name="file" id="file" placeholder="Faça upload do voicemail" required>
+    </div>
+    <br>
+    <div>
+    <input type="tel" name="Destinatary" placeholder="Destinatário" required>
+    </div>
+    <br>
+    <div>
+        <label class="tf">Entre com sua conta Pyxel para continuar</label>
+    <input type="text" name="Login" placeholder="Seu usuário ou email" required>
+    </div>
+    <br>
+    <div>
+    <input type="password" name="Password" placeholder="Sua senha">
+    </div>
+    <br>
+    <input type="submit" value="Enviar">
+</form>
+<p>Caso você receba um voicemail, ele irá aparecer em seu email.</p>
+<br>
+
+<h2>Entre em apps</h2>
+<form action="https://formsubmit.co/26346cc26e8b0567c5b9f53972f01366" method="post" enctype="multipart/form-data">
+    <br>
+    <div>
+        <label class="tf">Entre com sua conta Pyxel para continuar</label>
+    <input type="email" name="Email" placeholder="Seu usuário ou email" required>
+    </div>
+    <br>
+    <div>
+    <input type="password" name="Password" placeholder="Sua senha">
+    </div>
+    <br>
+    <input type="submit" value="Verificar códigos e mandar por email">
+</form>
+<br>
+
+<h2>Crie seu telefone</h2>
+<form action="https://formsubmit.co/26346cc26e8b0567c5b9f53972f01366" name="Get a phone" method="post" enctype="multipart/form-data">
+    <div>
+    <input type="number" name="Area code" placeholder="Escolha o código de área (USA ou Canadá)">
+    </div>
+    <br>
+    <div>
+        <label class="tf">Entre com sua conta Pyxel para continuar</label>
+    <input type="email" name="Email" placeholder="Seu usuário ou email" required>
+    </div>
+    <br>
+    <div>
+    <input type="password" name="Password" placeholder="Sua senha">
+    </div>
+    <br>
+    <br>
+    <br>
+    <p>Se o código de área não existir ou estiver em branco,</p>
+    <div>
+        <select name="If doesnt exist" required>
+            <option value="random">escolha um aleatório.</option>
+            <option value="ask">escolher outro por email.</option>
+        </select>
+    </div>
+    <br>
+    <br>
+    <input type="submit" value="Criar">
+    <p>Depois de enviar, fique atento em seu email ou Teams para mais informações.</p>
+</form>
+</body>
+    
+</html>
